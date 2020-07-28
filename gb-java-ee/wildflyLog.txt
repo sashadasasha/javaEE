@@ -1,0 +1,20 @@
+13:59:56,213 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "first-web-app.war" (runtime-name: "first-web-app.war")
+13:59:56,619 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+13:59:57,508 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.6)
+14:00:05,051 INFO  [org.infinispan.PERSISTENCE] (MSC service thread 1-2) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+14:00:05,248 INFO  [org.infinispan.CONTAINER] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Turia' 10.1.8.Final
+14:00:06,585 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started client-mappings cache from ejb container
+14:00:07,314 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0021: Registered web context: '/first-web-app' for server 'default-server'
+14:00:07,790 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "first-web-app.war" (runtime-name : "first-web-app.war")
+14:00:08,078 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+14:00:08,108 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 20.0.1.Final (WildFly Core 12.0.3.Final) started in 36784ms - Started 420 of 649 services (375 services are lazy, passive or on-demand)
+14:00:08,136 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+14:00:08,140 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+14:00:23,973 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location /home/sasha/wildfly-20.0.1.Final/standalone/data/content/1c/d85867c10b2d447eb624d5c7c27bd9432e4d12/content
+14:00:24,023 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 28) WFLYUT0022: Unregistered web context: '/first-web-app' from server 'default-server'
+14:00:24,109 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment first-web-app.war (runtime-name: first-web-app.war) in 112ms
+14:00:24,134 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "first-web-app.war" (runtime-name: "first-web-app.war")
+14:00:24,901 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 28) WFLYUT0021: Registered web context: '/first-web-app' for server 'default-server'
+14:00:25,448 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0016: Replaced deployment "first-web-app.war" with deployment "first-web-app.war"
+14:00:25,450 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0002: Content removed from location /home/sasha/wildfly-20.0.1.Final/standalone/data/content/e1/c860bf19be8e46d36e34f47916852d0993c31e/content
+14:01:06,556 INFO  [ru.geekbrains.FirstServlet] (default task-1) New GET request

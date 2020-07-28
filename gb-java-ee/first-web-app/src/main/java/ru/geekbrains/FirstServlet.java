@@ -1,34 +1,33 @@
 package ru.geekbrains;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.servlet.*;
-import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class FirstServlet implements Servlet {
 
-    private transient ServletConfig config;
+
+public class FirstServlet extends HttpServlet {
+
+    private static Logger logger = LoggerFactory.getLogger(FirstServlet.class);
+
     @Override
-    public void init(ServletConfig servletConfig) throws ServletException {
-        this.config = servletConfig;
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.info("New GET request");
+
+        resp.setHeader("Content-Type", "text/html; charset=utf-8");
+        resp.getWriter().printf("<h1>Ураааа!.. Заработало!</h1>");
     }
 
     @Override
-    public ServletConfig getServletConfig() {
-        return this.config;
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.info("New POST request");
+        resp.getWriter().printf("<h1>New POST request</h1>");
     }
 
-    @Override
-    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        servletResponse.getWriter().println("<h1>Урааа Заработало!..</h1>");
-    }
 
-    @Override
-    public String getServletInfo() {
-        return null;
-    }
-
-    @Override
-    public void destroy() {
-
-    }
 }
