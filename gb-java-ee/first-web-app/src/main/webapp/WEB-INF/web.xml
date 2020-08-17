@@ -5,6 +5,7 @@
          version="4.0">
 
   <display-name>Archetype Created Web Application</display-name>
+<<<<<<< HEAD
   <servlet>
     <servlet-name>first-servlet</servlet-name>
     <servlet-class>ru.geekbrains.FirstServlet</servlet-class>
@@ -14,4 +15,14 @@
     <servlet-name>first-servlet</servlet-name>
     <url-pattern>/first-servlet</url-pattern>
   </servlet-mapping>
+=======
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error404</location>
+  </error-page>
+  <error-page>
+    <error-code>403</error-code>
+    <location>/error403</location>
+  </error-page>
+>>>>>>> lesson2
 </web-app>
