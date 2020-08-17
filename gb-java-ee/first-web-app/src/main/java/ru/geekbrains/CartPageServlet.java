@@ -19,7 +19,7 @@ public class CartPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info("Cart page");
-        resp.getWriter().println("<h1>Корзина</h1>");
+        getServletContext().getRequestDispatcher("/WEB-INF/cart.jsp").forward(req, resp);
     }
 
 }
